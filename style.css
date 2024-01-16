@@ -1,0 +1,53 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.maindiv{
+    width: 50%;
+    height: 300px;
+    position: relative;
+  
+}
+
+.maindiv>img{  
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+
+.sidediv{
+    position: absolute;
+    overflow: hidden;
+    background-color: #000000;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 0;
+    transition: .5s ;
+
+}
+
+.maindiv:hover .sidediv{
+    height: 100%;
+    opacity: 0.5;
+}
+
+.maindiv:hover .underdiv{
+   opacity: 1;
+    
+}
+
+.underdiv{
+    position: absolute;
+    overflow: hidden;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
